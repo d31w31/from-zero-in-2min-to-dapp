@@ -4,7 +4,12 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "code:preview": "vite preview"
+    "check:satellite-id": "if [[ -z ${JUNO_SATELLITE_ID} ]]; then echo \"❌ 'JUNO_SATELLITE_ID' environment variable missing but required\"; exit 1; fi",
+    "check:juno-token": "if [[ -z ${JUNO_TOKEN} ]]; then echo \"❌ 'JUNO_TOKEN' environment variable missing but required\"; exit 1; fi",
+    "code:prepare": "cat juno.template.json | sed \"s|\\\"__JUNO_SATELLITE_ID__\\\"|\\\"${JUNO_SATELLITE_ID:-ERROR_SATTELITE_ID_MISSING}\\\"|\" > \"juno.json\"",
+    "code:preview": "vite preview",
+    "code:prepare-deploy": "npm run check:satellite-id && npm run check:juno-token && npm run code:prepare",
+    "code:deploy:manually": "npm run code:prepare-deploy && ./node_modules/.bin/juno deploy"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
