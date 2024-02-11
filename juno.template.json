@@ -1,6 +1,6 @@
 {
   "satellite": {
-    "satelliteId": "xo2hm-lqaaa-aaaal-ab3oa-cai",
+    "satelliteId": "__JUNO_SATELLITE_ID__",
     "source": "public",
     "storage": {
       "headers": [{
