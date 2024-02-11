@@ -5,9 +5,9 @@ on:
   push:
     branches:
       - main
-      - from-zero-in-2min-to-dapp
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -20,8 +20,11 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Build
+      - name: Prepare Juno
         run: npm run code:prepare-deploy
+        env:
+          JUNO_TOKEN: ${{ secrets.JUNO_TOKEN }}
+          JUNO_SATELLITE_ID: ${{ vars.JUNO_SATELLITE_ID }}
 
       - name: Deploy to Juno
         uses: junobuild/juno-action@main
@@ -29,3 +32,4 @@ jobs:
           args: deploy
         env:
           JUNO_TOKEN: ${{ secrets.JUNO_TOKEN }}
+          JUNO_SATELLITE_ID: ${{ vars.JUNO_SATELLITE_ID }}

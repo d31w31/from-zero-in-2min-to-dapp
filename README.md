@@ -25,17 +25,16 @@
 15. Click "Close"
 16. Move to GitHub https://github.com/dennyweiss/from-zero-in-2min-to-dapp
 17. Click fork repository
-18. Go to "⚙️Settings > Environments" and click "New environment"
-19. Enter the name "production" and click "Configure environment"
-20. Don't touch the default and click "Save protection rules"
-21. Click "Environment secrets > Add secret"
+18. Go to "⚙️Settings > Secrets and variables > Actions" 
+19. Select the "Secrets" tab and click "New repository secret"
 22. Add "JUNO_TOKEN" as name and the formerly stored "Secret token ⚠️" as value and click "Add secret"
-23. Click "Environment variables > Add variable"
+23. Select the "Variables" tab and click "New repository variable"
 24. Add "JUNO_SATELLITE_ID" as name and the formerly stored "Satellite" ID as value and click "Add variable"
-25. Move to Code
+25. Move to Code & open `public` directory
 26. Use dropdown "Add file" and change it to "Upload files"
 27. Drag the HTML files from "Prerequisites step 3" here
 28. Press commit changes
+29. Go to https://[ADD_YOUR_SATELLITE_ID_HERE].icp0.io to inspect the newly deployed dApp
 
 
 
