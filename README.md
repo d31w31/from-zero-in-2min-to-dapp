@@ -53,8 +53,23 @@
 
 ### Be proud about your dApp
 
-Go to https://[ADD_YOUR_SATELLITE_ID_HERE].icp0.io to inspect the newly deployed dApp
+Go to `https://ADD_YOUR_SATELLITE_ID_HERE.icp0.io` to inspect the newly deployed dApp
 
+## *Project rationale & Acknowledgments*
 
+The **"From Zero in 2 Minutes to dApp"** showcase was developed as inspiration and submitted to the ["From Zero to dApp" Hackathon 2024](https://www.encode.club/zero-to-dapp-hackathon) hosted by [Encode Club](https://www.encode.club/). 
 
+It aims to empower non-developers by enabling the swift creation of websites on the Web3 platform in approximately two minutes. This project was made possible through the utilization of the [Internet Computer](https://internetcomputer.org/) and was significantly inspired by the contributions of [David Dal Busco](https://www.linkedin.com/in/david-dal-busco/). Specifically, his pioneering work on **[Juno](https://juno.build/)**, an open-source blockchain platform, allows developers and non-developers alike to build Web3 apps with the ease reminiscent of Web2 development practices.
+For the practical execution of this project, I leveraged two GitHub repositories provided by David Dal Busco: the [Juno Action](https://github.com/junobuild/juno-action) GitHub Action for deploying websites to Juno and the [Juno Examples
+](https://github.com/junobuild/examples) repository containing website starter kits. These resources were instrumental in developing the showcase project as the foundational resource for its creation.
 
+Furthermore, I'd like to acknowledge [Lukas Vozda](https://twitter.com/lukasvozda) for his asynchronous yet serendipitously similar proposal to expand [Juno](https://juno.build/) and [ICP's](https://internetcomputer.org/) reach among non-developers. Although Lukas and I worked independently, his idea resonates with the essence of this showcase, highlighting the collective drive within our community to make Web3 more accessible to a broader audience.
+
+While bringing ["From Zero in 2 Minutes to dApp"](https://github.com/dennyweiss/from-zero-in-2min-to-dapp) to live was an individual endeavor, it stands on the shoulders of remarkable contributions from the [Internet Computer](), [David Dal Busco](https://www.linkedin.com/in/david-dal-busco/), and the inspiring ideas shared by [Lukas Vozda](https://twitter.com/lukasvozda). 🙏🏽
+
+### Resources
+
+1. [Juno](https://juno.build/)
+2. [Juno Docs > Creating the GitHub Action](https://juno.build/docs/miscellaneous/github_actions#creating-the-github-action)
+3. [Juno Examples – Vanilla - TypeScript + Vite](https://github.com/junobuild/examples/tree/main/vanilla/vite-typescript)
+2. [Internet Computer Docs](https://internetcomputer.org/docs/current/home)
