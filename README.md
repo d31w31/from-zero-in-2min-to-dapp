@@ -1,6 +1,10 @@
 # From zero in 2 minutes to dAPP
 
-## Prerequisites
+*Do you like a visual overview?*
+
+-> [From zero in 2 min to dApp Visual Overview](https://www.figma.com/file/jKyVjm7MUBuMQSEMMJXjcJ/From-zero-in-2-min-to-dApp?node-id=1%3A2645)
+
+## (0) Prerequisites
 
 1. 2 min time
 2. An existing and authenticated GitHub account
@@ -8,12 +12,15 @@
 
 ## Workflow
 
-### Navigate to Juno
+### (1) Create Internet Identity & Juno Satellite
+
+#### Navigate to Juno
 
 1. Go to https://juno.build/
 2. Click "Start building" *(have a look at the top right of the page)*
 
-### Create Internet Identity
+#### Create Internet Identity
+
 1. Click "Continue with Internet Identity" to sign up with Internet Identity
 2. Click "Create Internet Identity"
 3. Click "Continue without Passkey"
@@ -22,7 +29,7 @@
 6. Copy your Internet Identity *(number)* and store it in a save place
 7. Click "I saved it, continue"
 
-### Create your dApp carrying Satellite
+#### Create your dApp carrying Satellite
 
 1. At https://console.juno.build/ click "Launch a new Satellite"
 2. Enter a name "Cool just 2min until Web3 🚀" & click "Create satellite" & click "Continue"
@@ -36,22 +43,23 @@
 10. Copy and paste the "Secret token ⚠️" to a secure location
 11. Click "Close"
 
-### Setup GitHub
-1. Sign into 
-2. Move to GitHub https://github.com/dennyweiss/from-zero-in-2min-to-dapp
-2. Click "Fork" repository, don't touch the defaults & click "Create fork"
-3. Go to "⚙️Settings > Secrets and variables > Actions" 
-4. Select the "Secrets" tab and click "New repository secret"
-5. Add "JUNO_TOKEN" as name and the formerly stored "Secret token ⚠️" as value and click "Add secret"
-6. Select the "Variables" tab and click "New repository variable"
-7. Add "JUNO_SATELLITE_ID" as name and the formerly stored "Satellite" ID as value and click "Add variable"
-8. Go to "Actions" and click "I understand my workflows, go ahead and enable them"
-9. Move to Code & open `public` directory
-10. Use dropdown "Add file" and change it to "Upload files"
-11. Drag the files from "Prerequisites step 3" into the "Drag files here to add them to your repository" file drop area 
-12. Click "Commit changes"
+### (2) Setup GitHub
 
-### Be proud about your dApp
+1. Sign into
+2. Move to GitHub https://github.com/dennyweiss/from-zero-in-2min-to-dapp
+3. Click "Fork" repository, don't touch the defaults & click "Create fork"
+4. Go to "⚙️Settings > Secrets and variables > Actions"
+5. Select the "Secrets" tab and click "New repository secret"
+6. Add "JUNO_TOKEN" as name and the formerly stored "Secret token ⚠️" as value and click "Add secret"
+7. Select the "Variables" tab and click "New repository variable"
+8. Add "JUNO_SATELLITE_ID" as name and the formerly stored "Satellite" ID as value and click "Add variable"
+9. Go to "Actions" and click "I understand my workflows, go ahead and enable them"
+10. Move to Code & open `public` directory
+11. Use dropdown "Add file" and change it to "Upload files"
+12. Drag the files from "Prerequisites step 3" into the "Drag files here to add them to your repository" file drop area
+13. Click "Commit changes"
+
+### (3) Be proud about your dApp
 
 Go to `https://ADD_YOUR_SATELLITE_ID_HERE.icp0.io` to inspect the newly deployed dApp
 
@@ -65,11 +73,11 @@ For the practical execution of this project, I leveraged two GitHub repositories
 
 Furthermore, I'd like to acknowledge [Lukas Vozda](https://twitter.com/lukasvozda) for his asynchronous yet serendipitously similar proposal to expand [Juno](https://juno.build/) and [ICP's](https://internetcomputer.org/) reach among non-developers. Although Lukas and I worked independently, his idea resonates with the essence of this showcase, highlighting the collective drive within our community to make Web3 more accessible to a broader audience.
 
-While bringing ["From Zero in 2 Minutes to dApp"](https://github.com/dennyweiss/from-zero-in-2min-to-dapp) to live was an individual endeavor, it stands on the shoulders of remarkable contributions from the [Internet Computer](), [David Dal Busco](https://www.linkedin.com/in/david-dal-busco/), and the inspiring ideas shared by [Lukas Vozda](https://twitter.com/lukasvozda). 🙏🏽
+While bringing ["From Zero in 2 Minutes to dApp"](https://github.com/dennyweiss/from-zero-in-2min-to-dapp) to live was an individual endeavor, it stands on the shoulders of remarkable contributions from the [Internet Computer](https://internetcomputer.org/), [David Dal Busco](https://www.linkedin.com/in/david-dal-busco/), and the inspiring ideas shared by [Lukas Vozda](https://twitter.com/lukasvozda). 🙏🏽
 
 ### Resources
 
 1. [Juno](https://juno.build/)
 2. [Juno Docs > Creating the GitHub Action](https://juno.build/docs/miscellaneous/github_actions#creating-the-github-action)
 3. [Juno Examples – Vanilla - TypeScript + Vite](https://github.com/junobuild/examples/tree/main/vanilla/vite-typescript)
-2. [Internet Computer Docs](https://internetcomputer.org/docs/current/home)
+4. [Internet Computer Docs](https://internetcomputer.org/docs/current/home)
